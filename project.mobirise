@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-10 13:06",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://lido-fl.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://lido-fl.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "wwycvqeiif",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Lido Fi™ | Home Official Site",
+        "meta_descr": "WebA growing Lido ecosystem. Lido empowers stakers to put their staked tokens to use. Explore apps and services integrated with Lido.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://lido.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/lido-fi.png\" alt=\"Lido Fi\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u0WyehgQnD",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://lido.fi/\" class=\"text-primary\">Lido Fi</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Unlocking the Power of Staked Ethereum: An In-Depth Look at <a href=\"https://lido-fl.github.io/\" class=\"text-primary\">Lido Fi</a></b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-expanding realm of decentralized finance (DeFi), innovative platforms continually emerge to address the evolving needs of the crypto community. One such notable player is Lido Fi, a protocol designed to offer a seamless solution for staking Ethereum (ETH). This article delves into the intricacies of Lido Fi, exploring its purpose, mechanisms, and the impact it has on the broader DeFi landscape.\n<br>\n<br>Understanding <a href=\"https://lido-fl.github.io/\" class=\"text-primary\">Lido Fi</a>\n<br>The Essence of Staking\n<br>Staking, a process integral to various blockchain networks, involves locking up a certain amount of cryptocurrency to support the operations of the network. In return, participants earn rewards, contributing to the security and functionality of the blockchain. Ethereum, a leading blockchain platform, has transitioned to a proof-of-stake (PoS) model as part of Ethereum 2.0, making staking a crucial aspect of the network's dynamics.\n<br>\n<br>Lido Fi's Unique Role\n<br><a href=\"https://lido-fl.github.io/\" class=\"text-primary\">Lido Fi</a> stands out by addressing a significant challenge associated with staking on Ethereum – liquidity. When users stake their ETH in the Ethereum 2.0 network, the assets become illiquid and are locked for an extended period. Lido Fi provides a solution by tokenizing staked ETH, creating a liquid representation called stETH. This token can be traded or utilized in various DeFi applications, allowing users to maintain liquidity while still earning staking rewards.\n<br>\n<br>The Mechanism Behind Lido Fi\n<br>Staking Pool Aggregation\n<br>Lido Fi operates by aggregating ETH from users into a staking pool, which is then staked on the Ethereum 2.0 network. The protocol is designed to optimize staking efficiency and maximize returns for users. Through this aggregation process, Lido Fi streamlines the staking experience, eliminating the need for users to manage their own nodes or navigate the complexities of staking infrastructure.\n<br>\n<br>stETH: The Liquid Staking Asset\n<br>As users deposit ETH into Lido Fi, they receive a proportional amount of stETH in return. stETH is a tokenized representation of the staked ETH within the Lido Fi protocol. The beauty of stETH lies in its liquidity – unlike staked ETH in the Ethereum 2.0 network, stETH can be freely traded, transferred, or used in various DeFi applications.\n<br>\n<br>Earning Staking Rewards\n<br>Users who participate in Lido Fi not only benefit from the liquidity of stETH but also continue to earn staking rewards. As the aggregated ETH is staked on Ethereum 2.0, users receive a yield in the form of additional stETH. This dual advantage of liquidity and ongoing rewards enhances the appeal of Lido Fi for investors and DeFi enthusiasts.\n<br>\n<br>The Impact on DeFi\n<br>Enhanced Liquidity\n<br>One of the primary contributions of Lido Fi to the DeFi ecosystem is the enhancement of liquidity. By providing a liquid representation of staked ETH in the form of stETH, Lido Fi enables users to seamlessly participate in various DeFi activities without sacrificing the rewards generated through staking.\n<br>\n<br>DeFi Interoperability\n<br>Lido Fi's stETH can be integrated into a multitude of decentralized finance platforms, expanding the interoperability of the token. Whether it's providing liquidity on decentralized exchanges (DEXs), participating in yield farming protocols, or collateralizing loans, stETH becomes a versatile asset within the broader DeFi landscape.\n<br>\n<br>Democratizing Staking\n<br>Lido Fi's user-friendly approach to staking democratizes access to Ethereum 2.0 staking rewards. Users who might find the process of running their own node or managing staking infrastructure complex can easily participate in staking through Lido Fi, unlocking the potential benefits of staking without the need for technical expertise.\n<br>\n<br>Risks and Considerations\n<br>Smart Contract Risks\n<br>As with any DeFi protocol, users should be aware of the inherent smart contract risks associated with platforms like Lido Fi. It's essential to conduct thorough research, understand the risks involved, and only invest funds that one can afford to lose.\n<br>\n<br>Centralization Concerns\n<br>While Lido Fi strives for decentralization, users should stay informed about the protocol's governance and any potential centralization risks. As the DeFi space continues to evolve, maintaining a balance between decentralization and efficiency becomes crucial.\n<br>\n<br>Future Developments and Roadmap\n<br>Protocol Upgrades\n<br>Lido Fi, like many DeFi projects, is likely to undergo upgrades and improvements over time. These may include enhancements to the staking mechanism, additional features, and optimizations to address emerging challenges.\n<br>\n<br>Community Engagement\n<br>The success of Lido Fi is closely tied to community engagement and feedback. As the protocol evolves, ongoing collaboration with the user community can contribute to the refinement of features and the identification of potential areas for improvement.\n<br>\n<br>Conclusion\n<br>Lido Fi emerges as a key player in the decentralized finance space, providing a bridge between Ethereum 2.0 staking and the broader DeFi ecosystem. By addressing the liquidity challenges associated with staking, Lido Fi introduces a novel solution that appeals to both seasoned crypto enthusiasts and newcomers to the DeFi scene. As the protocol continues to evolve, its impact on the democratization of staking and the enhancement of DeFi liquidity is likely to resonate throughout the crypto landscape. Lido Fi not only unlocks the power of staked Ethereum but also contributes to the ongoing narrative of decentralized finance as a transformative force in the world of traditional finance.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u0WyeZrgYl",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
